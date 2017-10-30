@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+if [ $# -lt 1 ]; then
+    echo "No folder name in command line"
+else
+    mkdir -p $1
+    cp lib/c_makefile/makefile $1/
+    echo -e "$1 was created with makefile. call \"make all\" to run make file"
+fi
+

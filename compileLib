@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cd lib/libfdr/
+make clean
+make all
+cd ..
+cd libgraph/
+make clean
+make all
+cd ..
+cd libabs/
+make clean
+make all
+cd
