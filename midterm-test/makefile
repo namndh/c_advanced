@@ -25,5 +25,4 @@ $(PROGRAM): $(OBJS)
 	$(CC) $(FLAGS) $(INCLUDES) $(SRCS)
 
 clean:
-	find . -type f | xargs touch
 	rm -rf core $(PROGRAM) $(OBJS) *~
