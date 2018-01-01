@@ -1,0 +1,14 @@
+[STATIONS]
+S1=Tran Hung Dao
+S2=Tran Quoc Tuan
+S3=Tran Dai Nghia
+S4=Ta Quang Buu
+S5=Le Loi
+S6=Tran Quoc Toan
+S7=Le Dai Hanh
+S8=Dinh Bo Linh
+S9=Le Hoan
+[LINES]
+M1=S1 S2 S4 S3 S7 S9
+M2=S3 S4 S6 S7 S8 S5
+M3=S2 S4 S6 S8 S9

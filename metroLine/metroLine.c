@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <libfdr/jrb.h>
-#include <libgraph/graph.h>
 
 
+
+typedef JRB graph;
 
 typedef struct Station {
   int num;
@@ -12,8 +13,7 @@ typedef struct Station {
   char *name;
 }Station;
 
-
-typedef Graph Metro;
+typedef graph Metro;
 
 
 Station create_station(){
@@ -21,6 +21,32 @@ Station create_station(){
   station.sign = (char *)malloc(sizeof(char) * 100);
   station.name = (char *)malloc(sizeof(char) * 100);
   return station;
+}
+
+void add_edge(graph metro, int v1, int v2){
+
+  JRB treeV1 = jrb_find_int(metro, v1);
+  JRB treeV2 = jrb_find_int(metro, v2);
+  if(treeV1 == NULL) jrb_insert_int(metro, v1,new_jval_v( make_jrb()));
+  if(treeV2 == NULL) jrb_insert_int(metro, v2, new_jval_v(make_jrb()));
+  treeV1 = jrb_find_int(metro, v1);
+  JRB node = (JRB)jval_v(treeV1->val);
+  jrb_insert_int(node, v2, new_jval_i(1));
+}
+
+int getAdjacentVertices(graph metro, int v, int *output){
+  JRB treeV = jrb_find_int(metro, v);
+  if (treeV == NULL){
+    return 0;
+  }
+  JRB node = (JRB)jval_v(treeV->val);
+  int count = 0;
+  JRB ptr;
+  jrb_traverse(ptr, node){
+    output[count] = jval_i(ptr->key);
+    count ++;
+  }
+  return count;
 }
 
 int readData(Metro metro, Station *station, char *fileName)
@@ -79,7 +105,7 @@ int readData(Metro metro, Station *station, char *fileName)
 		  prev = current;
 		  continue;
 		};
-	      addEdge(metro, prev, current);
+	      add_edge(metro, prev, current);
 	      prev = current;
 	    };
 	}

@@ -1,196 +1,185 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "graph.h"
 
-graph create_graph(){
-  return make_jrb();
+
+
+Graph createGraph(){
+        Graph graph = make_jrb();
+        return graph;
 }
 
-void add_edge(graph g, int v, int v2){
-  if (adjacent(g, v, v2))
-    return;
 
-#define ADD_EDGE_MACRO(v, v2) {
-      JRB node = jrb_find_int(g, v);
-      JRB tree;
-      if (node == NULL) {
-        tree = make_jrb();
-        jrb_insert_int(g, v, new_jval_v(tree));
-      }
-
-      else
-        tree = (JRB) jval_v(node->val);
-        jrb_insert_int(tree, v2, new_jval_i(1));
-  } while(0);
-
-  ADD_EDGE_MACRO(v, v2);
-  #ifndef UDGGIN
-  ADD_EDGE_MACRO(v2, v);
-  #undef ADD_EDGE_MACRO
+void addEdge(Graph graph, int v1, int v2)
+{
+        JRB treeV1 = jrb_find_int(graph, v1);
+        JRB treeV2 = jrb_find_int(graph, v2);
+        if(treeV1 == NULL) jrb_insert_int(graph, v1,new_jval_v( make_jrb()));
+        if(treeV2 == NULL) jrb_insert_int(graph, v2, new_jval_v(make_jrb()));
+        treeV1 = jrb_find_int(graph, v1);
+        JRB node = (JRB)jval_v(treeV1->val);
+        jrb_insert_int(node, v2, new_jval_i(1));
 }
 
-int adjacent(graph g, int v, int v2){
-  if (g == NULL) {
-    return 0;
-  }
-
-  JRB node = jrb_find_int(g, v);
-  JRB tree;
-  if (node == NULL) {
-    return 0;
-  }
-  tree = (JRB)jval_v(node->val);
-  JRB f = jrb_find_int(tree, v2);
-  if (f != NULL) {
-    return 1;
-  }
-  return 0;
+void addEdgeUndir(Graph graph, int v1, int v2)
+{
+        addEdge(graph, v1, v2);
+        addEdge(graph, v2, v1);
 }
 
-int get_adjacent_vertices(graph g, int vertex, int *output){
-  if (g == NULL) {
-    return 0;
-  }
-  JRB node = jrb_find_int(g, vertex);
-  JRB tree;
-  if (node == NULL) {
-    return 0;
-  }
-  int total = 0;
-  tree = (JRB) jval_v(node->val);
-  jrb_traverse(node, tree)
-  output[total++] = jval_i(node->key);
-  return total;
+int adjacent(Graph graph, int v1, int v2)
+{
+        JRB treeV1 = jrb_find_int(graph, v1);
+        JRB treeV2 = jrb_find_int(graph, v2);
+        if(treeV1 == NULL || treeV2 == NULL) return 0;
+        JRB node1 = (JRB)jval_v(treeV1->val);
+        JRB node2 = jrb_find_int(node1, v2);
+        if(node2 == NULL) return 0;
+        else return 1;
 }
 
-void drop_graph(graph *g){
-  JRB graph = (JRB)*g;
-  JRB node;
-  jrb_traverse(node, graph)
-  jrb_free_tree(jval_v(node->val));
-  jrb_free_tree(*g);
-  *g = NULL;
+int adjacentUndir(Graph graph, int v1, int v2)
+{
+        if(adjacent(graph, v1, v2) == 1 && adjacent(graph, v1, v2) == 1) return 1;
+        else return 0;
 }
 
-void BFS(graph g, int start, int stop, void(*visited_func)(int)){
-  JRB tmp;
-  int v = 0;
-  jrb_traverse(tmp, g){
-    g++;
-  }
 
-  int *visited = (int *)malloc(v * sizeof(int));
-  if (visited == NULL) {
-    fprintf(stderr, "Allocated failed in %s:%d\n", __FILE__, __LINE__);
-    exit(1);
-  }
-
-  int i;
-  for (i = 0; i < v; i++) {
-    visited[i] = 0;
-  }
-
-  Dllist queue = new_dllist();
-
-  JRB node = jrb_find_int(g, start);
-  if (node == NULL) {
-    goto end;
-  }
-
-  dll_append(queue, new_jval_i(start));
-
-  while (!dll_empty(queue)) {
-    Dllist node = dll_first(queue);
-    int u = jval_i(node->val);
-
-    dll_delete_node(node);
-
-    if (!visited[u]) {
-      visited_func(u);
-      visited[u] = 1;
-    }
-
-    if (u == stop) {
-      goto end;
-    }
-
-    JRB u_node = jrb_find_int(g, u);
-    if (u_node == NULL) {
-      continue;
-    }
-
-    JRB vertex_connect_to_u_tree = (JRB)(jval_v(u_node->val));
-
-    jrb_traverse(tmp, vertex_connect_to_u_tree){
-      if (visited[tmp->key.i]) {
-        /* code */
-        dll_append(queue, new_jval_i(tmp->key.i));
-      }
-    }
-  }
-  end:
-  free(visited);
-  free_dllist(queue);
+int getAdjacentVertices(Graph graph, int v, int *output)
+{
+        JRB treeV = jrb_find_int(graph, v);
+        if(treeV == NULL) return 0;
+        JRB node = (JRB)jval_v(treeV->val);
+        int count = 0;
+        JRB ptr;
+        jrb_traverse(ptr, node){
+                output[count] = jval_i(ptr->key);
+                count++;
+        }
+        return count;
 }
 
-void DFS(graph g, int start, int stop, void(*visited_func)(int)){
-  JRB tmp;
-  int v = 0;
-  jrb_traverse(tmp, g)
-  {
-    v ++ ;
-  }
 
-  int *visited = (int*)malloc(v*sizeof(int));
-  if (visited == NULL) {
-    fprintf(stderr, "Allocated failed in %s:%d\n", __FILE__, __LINE__);
-    exit(1);
-  }
 
-  int i;
-  for (i = 0; i < v; i++) {
-    visited[i] = 0;
-  }
-
-  JRB node = jrb_find_int(g, start);
-  if (node == NULL) {
-    goto end;
-  }
-
-  Dllist stack = new_dllist();
-  dll_append(stack, new_jval_i(start));
-
-  while (!dll_empty(stack)) {
-    Dllist node = dll_last(stack);
-    int u = jval_i(node->val);
-    dll_delete_node(node);
-
-    if (!visited[u]) {
-      visited_func(u);
-      visited[u] = 1;
-    }
-
-    if (u == stop) {
-      goto end;
-    }
-
-    JRB u_node = jrb_find_int(g, u);
-    if (u_node == NULL ) {
-      continue;
-    }
-
-    JRB vertex_connect_to_u_tree = (JRB)(jval_v(u_node->val));
-
-    jrb_rtraverse(tmp, vertex_connect_to_u_tree)
-    {
-      if (!visited[tpm->key.i]) {
-        dll_append(stack, new_jval_i(tmp->key.i));
-      }
-    }
-  }
-
-  end:
-  free(visited);
-  free_dllist(stack);
+void dropGraph(Graph graph)
+{
+        jrb_free_tree(graph);
 }
+
+
+
+void enqueue(Dllist dllist, int node)
+{
+        dll_prepend(dllist, new_jval_i(node));
+}
+
+int dequeue(Dllist dllist)
+{
+        Dllist node = dll_last(dllist);
+        int v = jval_i(node->val);
+        dll_delete_node(node);
+        return v;
+}
+
+
+void push(Dllist dllist, int node)
+{
+        dll_prepend(dllist, new_jval_i(node));
+}
+
+
+int pop(Dllist dllist)
+{
+        Dllist node = dll_first(dllist);
+        int v = jval_i(node->val);
+        dll_delete_node(node);
+        return v;
+}
+
+void freeArray(int *array, int n)
+{
+        for(int i = 0; i< n; i++)
+        {
+                array[i] = 0;
+        };
+}
+
+
+void BFS(Graph graph, int start, void (*function)(int))
+{
+        int *visit = (int *)malloc(sizeof(int) * 100);
+        int i;
+        int *output = (int *)malloc(sizeof(int) * 100);
+        for(i = 0; i < 100; i++)
+        {
+                visit[i] = 0;
+        };
+        int n = 100;
+        Dllist traversal = new_dllist();
+        enqueue(traversal, start);
+
+        while(!jrb_empty(traversal))
+        {
+                int current = dequeue(traversal);
+                if(!visit[current])
+                {
+                        function(current);
+                        visit[current] = 1;
+                        freeArray(output, n);
+                        int numberOfAdjacentVertices = getAdjacentVertices(graph, current,output);
+                        for(i = 0; i < numberOfAdjacentVertices; i++)
+                        {
+                                if(!visit[output[i]])
+                                {
+                                        enqueue(traversal, output[i]);
+                                };
+                        }
+                }
+        }
+}
+
+
+
+
+void DFS(Graph graph, int start, void (*function)(int))
+{
+        int *visit = (int *)malloc(sizeof(int) * 100);
+        int *output = (int *)malloc(sizeof(int ) * 100);
+        int i;
+        int n = 100;
+        for(i = 0; i< n; i++)
+        {
+                visit[i] = 0;
+        };
+        Dllist traversal = new_dllist();
+        push(traversal, start);
+
+        while(!dll_empty(traversal))
+        {
+                int current = pop(traversal);
+                if( !visit[current])
+                {
+                        function(current);
+                        visit[current] = 1;
+                        freeArray(output, n);
+                        int numberOfAdjacentVertices = getAdjacentVertices(graph, current, output);
+                        for(i = 0; i< numberOfAdjacentVertices; i++)
+                        {
+                                if(!visit[output[i]])
+                                {
+                                        push(traversal, output[i]);
+                                };
+                        };
+                };
+        };
+}
+
+// void DFS(Graph graph, int start, void (*function)(int)){
+//         int *visit = (int *)malloc(sizeof(int)*100);
+//         int *output = (int *)malloc(sizeof(int)*100);
+//         int i;
+//         int n = 100;
+//         for(i = 0; i < n; i ++) visit[i] = 0;
+
+//         Dllist traversal = new_dllist();
+// }

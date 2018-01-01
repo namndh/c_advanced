@@ -1,0 +1,26 @@
+CC=gcc
+
+FLAGS = -g -Wall
+
+CFLAGS = -c $(FLAGS)
+
+INCLUDES = -I../../lib/include
+
+LIBS = -L../../lib/implementation
+
+LFLAGS= -lfdr -labs
+
+SRCS = *.c
+
+OBJS = $(SRCS:.c=.o)
+
+PROGRAMS = $(SRCS:.c=)
+
+
+all: $(PROGRAMS)
+
+$(PROGRAMS): $(OBJS)
+	$(CC) $(FLAG) $(INCLUDES) -o $(EXECUTABLE) $(OBJS) $(LIBS) $(LFLAGS)
+
+.c.o:
+	$(CC) $(INCLUDES) $(CFLAGS) $< -o $@

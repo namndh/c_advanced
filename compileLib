@@ -4,6 +4,10 @@ cd lib/libfdr/
 make clean
 make all
 cd ..
+cd libllist/
+make clean
+make all
+cd ..
 cd libgraph/
 make clean
 make all
@@ -11,4 +15,7 @@ cd ..
 cd libabs/
 make clean
 make all
-cd
+cd ..
+cd bt\-5.0.0
+make clean
+make all

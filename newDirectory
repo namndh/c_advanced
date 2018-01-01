@@ -4,8 +4,12 @@
 if [ $# -lt 1 ]; then
     echo "No folder name in command line"
 else
+    if [ -e $1 ]; then
+	echo "Folder exist. Can not duplicate folder"
+	exit 0
+    fi
     mkdir -p $1
     cp lib/c_makefile/makefile $1/
-    echo -e "$1 was created with makefile. call \"make all\" to run make file"
+    echo -e "$1 was created with makefile. Call \"make all\" to run make file and \"make clean\" to remove trash"
 fi
 

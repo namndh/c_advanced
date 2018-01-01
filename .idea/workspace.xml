@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="false">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b5e70553-d1e5-446e-9db7-aef813bcaacd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/.dep" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/ChangeLog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/LICENCE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/README" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/000btcrt/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/000btcrt/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/001btopn/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/001btopn/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/002binsky/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/002binsky/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/003bfndky/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/003bfndky/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/004bdelky/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/004bdelky/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/005btchgr/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/005btchgr/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/006btcrtr/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/006btcrtr/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/010btdelr/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/010btdelr/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/012btdelr/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/012btdelr/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/020bnxtky/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/020bnxtky/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/022bprvky/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/022bprvky/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/030bupdky/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/030bupdky/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/040insdat/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/040insdat/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/042insdat/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/042insdat/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/050seldat/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/050seldat/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/060deldat/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/060deldat/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/062deldat/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/062deldat/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/070upddat/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/070upddat/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/072upddat/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/072upddat/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/075dups/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/075dups/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/076dups/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/076dups/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/077dups/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/077dups/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/078dups-d/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/078dups-d/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/078dups-sh/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/078dups-sh/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/078dups/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/078dups/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/079pos/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/079pos/script" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/080kcp/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/080kcp/script.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/090bigdata/message" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/090bigdata/output_master" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/090bigdata/script.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/25.cmd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/bigdef.cmd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/bug.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/corrupt.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/create_output_masters.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/create_tests.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/data.cmd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/defdata.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/del100000keys.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/del35.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/delkeys1.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/delkeys2.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/delkeysord.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/delkeysrand.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/delkeysrord.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/fndkeysord.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/fndkeysrand.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/fndkeysrord.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/gendef" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/gendef.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/ins100000keys.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/ins2Mkeys.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/inskeysord.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/inskeysrand.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/inskeysrord.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/remdata.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/run_test.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/test_1.cmd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/test_control.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/ud.cmd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/upddata.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/Testcases/upddata1.bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/bigt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/bigtdel" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/bt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/btr" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/depend.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/inc/bc.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/inc/bt.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/inc/btcmd.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/inc/btr.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/inc/btree.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/inc/btree_int.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/kcp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/lib/.ignoreme" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/lib/libbt.a" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/samples/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/samples/btcopy.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/samples/btsort.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bacfre.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bacini.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/balbk1.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/balblk.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bclrlf.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bclrst.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bcpybk.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bdbug.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bdelk1.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bdelky.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bdemte.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bfndky.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bgtfre.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bgtinf.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bgtslt.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/binsky.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bjnblk.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bjoin.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bleaf.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bmkfre.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bmodky.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bnewap.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bnxtbk.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bnxtky.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bprvky.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bputky.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/brdblk.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bremky.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/brepky.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bsemap.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bsetbk.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bsetbs.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bsptbk.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bsrhbk.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bstinf.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bsuper.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btchgr.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btcls.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btcrt.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btcrtr.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btdata.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btdelr.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btdupkey.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btdups.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bterr.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btinit.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btlock.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btopn.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btpos.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btque.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btstk.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/btthresh.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bupdky.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/butil.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bvalap.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bwrblk.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-lib/bxdump.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-main/bigt.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-main/bigtdel.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-main/bt.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-main/btcmd.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-main/btr.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bt-5.0.0/src-main/kcp.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/compileLib" afterPath="$PROJECT_DIR$/compileLib" />
+      <change beforePath="$PROJECT_DIR$/lib/c_makefile/makefile" afterPath="$PROJECT_DIR$/lib/c_makefile/makefile" />
+      <change beforePath="$PROJECT_DIR$/lib/implementation/libgraph.a" afterPath="$PROJECT_DIR$/lib/implementation/libgraph.a" />
+      <change beforePath="$PROJECT_DIR$/lib/include/libgraph/graph.h" afterPath="$PROJECT_DIR$/lib/include/libgraph/graph.h" />
+      <change beforePath="$PROJECT_DIR$/lib/libgraph/graph.c" afterPath="$PROJECT_DIR$/lib/libgraph/graph.c" />
+      <change beforePath="$PROJECT_DIR$/lib/libgraph/graph.h" afterPath="$PROJECT_DIR$/lib/libgraph/graph.h" />
+      <change beforePath="$PROJECT_DIR$/lib/libgraph/graph.o" afterPath="$PROJECT_DIR$/lib/libgraph/graph.o" />
+      <change beforePath="$PROJECT_DIR$/metroLine/main" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/metroLine/metroLine.c" afterPath="$PROJECT_DIR$/metroLine/metroLine.c" />
+      <change beforePath="$PROJECT_DIR$/metroLine/metroLine.o" afterPath="$PROJECT_DIR$/metroLine/metroLine.o" />
+      <change beforePath="$PROJECT_DIR$/newDirectory" afterPath="$PROJECT_DIR$/newDirectory" />
+      <change beforePath="$PROJECT_DIR$/review-btree/btree.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-btree/data.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-btree/makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-btree/utility.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-btree/utility.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-graph/graph.c" afterPath="$PROJECT_DIR$/review-graph/graph.c" />
+      <change beforePath="$PROJECT_DIR$/review-graph/graph.h" afterPath="$PROJECT_DIR$/review-graph/graph.h" />
+      <change beforePath="$PROJECT_DIR$/review-graph/input.graph" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-graph/makefile" afterPath="$PROJECT_DIR$/review-graph/makefile" />
+      <change beforePath="$PROJECT_DIR$/review-graph/metro_stations.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-jval/jval.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-jval/jval.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-jval/makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-jval/test" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-jval/test.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-qs-generic/main" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-qs-generic/makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-qs-generic/qs_3w_g.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-qs-generic/qs_3w_g.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-qs-phonebook/main" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-qs-phonebook/makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-qs-phonebook/phonebook.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-qs-phonebook/phonebook.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-qs-phonebook/phonebook.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-quicksoft/main" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-quicksoft/main.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-quicksoft/main.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-quicksoft/makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-quicksoft/sort.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-quicksoft/sort.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-quicksoft/sort.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-rb_tree/data.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-rb_tree/main" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-rb_tree/makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-rb_tree/test-lib.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-rb_tree/test-lib.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-rb_tree/utility.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-rb_tree/utility.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/review-rb_tree/utility.o" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="graph.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/review-graph/graph.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="158" column="0" lean-forward="false" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clion-log.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/review-graph/graph.c" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="203" />
+    <option name="y" value="272" />
+    <option name="width" value="1440" />
+    <option name="height" value="820" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="c_advanced" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="c_advanced" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c_advanced" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="c_advanced" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c_advanced" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="c_advanced" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+              <item name="CMakeFiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="c_advanced" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="c_advanced" type="462c0819:PsiDirectoryNode" />
+              <item name="review-graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5e70553-d1e5-446e-9db7-aef813bcaacd" name="Default" comment="" />
+      <created>1514623291674</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1514623291674</updated>
+      <workItem from="1514623294475" duration="319000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="319000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23108384" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/review-graph/graph.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="158" column="0" lean-forward="false" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

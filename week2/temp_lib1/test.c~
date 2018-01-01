@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "data_type.h"
+#include "Binary_Tree.h"
+#include <time.h>
+
+
+int int_compare(void *a, void *b)
+{
+  return *(int *)a - *(int *)b;
+}
+
+void print_int(void *a)
+{
+  printf("%d\n", *(int *)a);
+}
+
+
+int main()
+{
+  srand(time(NULL));
+  int data = 5;
+  Tree tree = make_tree(&data);
+  int temp;
+  int num = 20;
+  int i;
+  for(i = 0; i < num; i++)
+    {
+      temp = rand()% 30;
+      printf("%d\n", temp);
+      insert_data(&tree, &temp, &int_compare);
+    };
+  printf("________________________\n");
+  preorder_traversal(tree, &print_int);
+  return 0;
+}
+  
